@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="./fullpage.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>CodeBank</title>
+</head>
+<body>
+    <header>   
+        <nav>
+            <div class="container">
+            <a href="index.html" id="logo">Code<span>bank</span>
+            </a>
+                <div class="menu">
+
+                </div class="bar">
+                    <ul class="main-nav-link">
+                        <li class="nav-link" ><a href="#How-it-works">How it works </a> </li>
+                        
+                        <li class="nav-link" ><a href="#Blog">Blog</a> </li>
+                        <li class="nav-link" ><a href="#Installations">Installations</a> </li>
+                        <li class="nav-link" ><a href="#Resources">Resources</a> </li>
+                        <li class="nav-link" ><a href="#Signup" class="sign-up">Sign up</a> </li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+<!-- the word section  -->
+        <section id="design">
+            <div>
+                <p class="p1">A place for the most <br>useful code snipets <br>you need in your project.</p>
+                <br>
+                <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quasi pariatur nobis <br> voluptatibus non porro vero facere iure, <br>facilis deserunt! Quas explicabo repellendus harum fugiat nam ex cum optio quae!</p>
+                <br>
+                <button class="btn1">Get started</button>
+                <button class="btn2">Learn more</button>
+        </section>
+        <img src="images/pinkright.png" alt="pinkbackground" class="
+        pinkbackground">
+        <img src="images/blueleft.png" alt="blueleft" class="blueleft">
+    </header>
+  
+    <main>
+        <div id="fullpage">
+        <section id="github">
+            <div class="container" id="languages">
+                <div class="row anim">
+                    <div class="col animate">
+                        <img src="images/Angular.png" alt="Angular" width="90px">
+                    </div>
+                    <div class="col animate">
+                        <img src="images/CSS3.svg" alt="CSS3" width="60px">
+                    </div>
+                    <div class="animate col">
+                        <img src="images/html.png" alt="HTML5" width="80px">
+                    </div>
+                    <div class="animate col ">
+                        <img src="images/js.png" alt="JavaScript" width="80px">
+                    </div>
+                    <div class="col animate">
+                        <img src="images/sass.jpg" alt="Sass" width="80px">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row" id="learn">
+                    <div class="col-md-6"onmouseover="change(this)" onmouseout="change2(this)" id="description2">
+                        <h3>Developers Helping Hand</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut placerat orci. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices gravida dictum fusce ut placerat orci. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.</p>
+                        <button type="button" class="btn btn-lg learn">Learn More</button>
+                        <div id="divider"></div>
+                        <button type="button" class="btn btn-lg github">View on GitHub</button>
+                    </div>
+                    <div class="col-md-6" id="cubejs"> 
+                        <img src="images/cubejs.png" id="pic2" alt="Cubejs Schema" width="400px">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid" id="container">
+                <div class="row">
+                    <div class="col-md-6" onmouseover="inst(this)" onmouseout="inst2(this)" id="install"  >
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Malesuada bibendum arcu vitae <br> elementum curabitur vitae nunc sed.</p>
+                        <button type="button" class="btn btn-lg">Install</button>
+                    </div>
+                    <div class="col-md-6" id="signup" onmouseover="inst2(this)" onmouseout="inst(this)">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Malesuada bibendum arcu vitae <br> elementum curabitur vitae nunc sed.</p>
+                        <button type="button" class="btn btn-lg">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sql" style="background-color: rgb(240, 248, 252);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 sql">
+                        <div class="row" style="background-color:white; border: 1px solid white">
+                            <div class="col-md-4">
+                                <img src="images/1.jpg" alt="CSS3">
+                            </div>
+                            <div class="col-md-8"  style="background-color:white; border: 1px solid white">
+                                <div class="sql" onmouseover="change(this)" onmouseout="change2(this)">
+                                    <h4 style="color: rgb(0, 132, 255);">SQL Code Organization</h4> 
+                                    <p>Lorem ipsum dolor sit amet,<br> 
+                                        consectetur adipiscing elit,
+                                        sed do <br> 
+                                        eiusmod tempor incididunt ut labore et <br> 
+                                        dolore magna aliqua. Malesuada <br> 
+                                        bibendum arcu vitae elementum<br> 
+                                        curabitur vitae nunc sed.</p></p>
+                                 </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 sql">
+                        <div class="row" >
+                            <div class="col-md-4">
+                                <img src="images/2.PNG" alt="CSS3">
+                            </div>
+                            <div class="col-md-8"  style="background-color:white; border: 1px solid white">
+                                <div class="sql" onmouseover="change(this)" onmouseout="change2(this)">
+                                    <h4 style="color: rgb(0, 132, 255);">SQL Code Organization</h4> 
+                                    <p>Lorem ipsum dolor sit amet,<br> 
+                                        consectetur adipiscing elit,
+                                        sed do <br> 
+                                        eiusmod tempor incididunt ut labore et <br> 
+                                        dolore magna aliqua. Malesuada <br> 
+                                        bibendum arcu vitae elementum<br> 
+                                        curabitur vitae nunc sed.</p></p>
+                                 </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 sql">
+                        <div class="row" >
+                            <div class="col-md-4">
+                                <img src="images/3.jpg" alt="CSS3" width="100px" class="designthree">
+                            </div>
+                            <div class="col-md-8" style="background-color:white; border: 1px solid white">
+                                <div class="sql" onmouseover="change(this)" onmouseout="change2(this)">
+                                    <h4 style="color: rgb(0, 132, 255);">SQL Code Organization</h4> 
+                                    <p>Lorem ipsum dolor sit amet,<br> 
+                                        consectetur adipiscing elit,
+                                        sed do <br> 
+                                        eiusmod tempor incididunt ut labore et <br> 
+                                        dolore magna aliqua. Malesuada <br> 
+                                        bibendum arcu vitae elementum<br> 
+                                        curabitur vitae nunc sed.</p></p>
+                                 </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 sql" >
+                        <div class="row" id="sql1">
+                            <div class="col-md-4" >
+                                <img src="images/4.jpg" alt="CSS3" id="imgage20" >
+                            </div>
+                            <div class="col-md-8" style="background-color:white; border: 1px solid white">
+                                <div class="sql" onmouseover="change(this)" onmouseout="change2(this)" >
+                                    <h4 style="color: rgb(0, 132, 255);">SQL Code Organization</h4> 
+                                    <p>Lorem ipsum dolor sit amet,<br> 
+                                        consectetur adipiscing elit,
+                                        sed do <br> 
+                                        eiusmod tempor incididunt ut labore et <br> 
+                                        dolore magna aliqua. Malesuada <br> 
+                                        bibendum arcu vitae elementum<br> 
+                                        curabitur vitae nunc sed1.</p></p>
+                                 </div>
+                                
+                            </div>
+                        </div>   
+                      
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
+    <section id="contribute">
+            <div>
+                <h3>Help us grow this project. Partner with us today.</h3>
+                <button type="button" class="btn btn-lg contribute" id="cont" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" onmouseover="cont(this)" onmouseout="cont2(this)">Become a Contributor</button>
+                <div id="divider"></div>
+                <button type="button" class="btn btn-lg donate" id="don" data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" onmouseover="cont2(this)" onmouseout="cont(this)">Donate</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>CodeBank</h4>
+                </div>
+                <div class="col">
+                    <h5>Title</h5>
+                    <ul>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Title</h5>
+                    <ul>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Title</h5>
+                    <ul>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Title</h5>
+                    <ul>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <p class="copyright">Copyright &copy; All rights reserved by CodeBank</p>
+      
+    </div>
+    <script>
+        function change(object2){
+            object2.style.background="black";
+            object2.style.color="white";
+        }
+        function change2(object3){
+            object3.style.background="white";
+            object3.style.color="black";
+        }
+        const inst=(obj)=>{
+            obj.style.background="#FFF7F7";
+            
+        }
+        const inst2=(obj)=>{
+            obj.style.background="#E6EEFE"
+        }
+
+    const cont=(obj)=>{
+        obj.style.background=' #E45050';
+        obj.style.color="white"
+
+    }
+    const cont2=(obj)=>{
+        obj.style.background="blue";
+        obj.style.color="white"
+    
+    }
+/*var installbutton=document.getElementById("install");
+
+var contribute=document.getElementById("cont");
+var donate=document.getElementById("don");
+document.getElementById("sql1").style.background="red";
+
+//sql1.style.background="red";
+installbutton.addEventListener('click', over);
+
+function over(obj){
+  obj.innerHTML="True";
+} */
+</script>
+</body>
+</html>
